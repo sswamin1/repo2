@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>SpringMVC</display-name>
+	
+	
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/spring-security-rest.xml /WEB-INF/rest-advice.xml</param-value>	
+	</context-param>
+	
+	<!-- this listener come into the picture when application starts and below 
+		listener would instantiate Spring Container WEB-INF/applicationContext.xml 
+		ApplicationContext application=new ClassPathXmlApplicationContext("aaa.xml"); -->
+
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	
+	<!-- Spring Security Filter Chain. This filter-name must not be changed. 
+		The <http> namespace creates a Spring bean with this name and the DelegatingFilterProxy 
+		will use this filter-name to delegate to the bean.
+		DelegatingFilterProxy forwards request to the spring security filter
+		 -->
+	<filter>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+
+	<servlet>
+		<servlet-name>rest</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>rest</servlet-name>
+		<url-pattern>/srest/*</url-pattern>
+	</servlet-mapping>
+
+</web-app>

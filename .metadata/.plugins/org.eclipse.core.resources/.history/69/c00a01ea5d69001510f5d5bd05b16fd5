@@ -1,0 +1,5 @@
+package com.soap.metro.person.service.impl;
+
+public class PersonServiceImpl {
+
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="com.rest.spring.model.Employee"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="web.designpattern.decorator.Expresso"/>
+<fullyQualifiedTypeName name="web.designpattern.decorator.Beverage"/>
+<fullyQualifiedTypeName name="web.designpattern.decorator.CondimentDecorator"/>
+<fullyQualifiedTypeName name="web.designpattern.decorator.HouseBlend"/>
+<fullyQualifiedTypeName name="web.designpattern.decorator.Mocha"/>
+<fullyQualifiedTypeName name="web.designpattern.decorator.Milk"/>
+<fullyQualifiedTypeName name="web.designpattern.decorator.Soy"/>
+<fullyQualifiedTypeName name="javax.jws.soap.SOAPBinding"/>
+<fullyQualifiedTypeName name="com.soap.metro.entity.Person"/>
+<fullyQualifiedTypeName name="com.soap.metro.person.services.PersonService"/>
+<fullyQualifiedTypeName name="javax.jws.WebService"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,5 @@
+package com.soap.metro.person.services;
+
+public interface PersonService {
+
+}

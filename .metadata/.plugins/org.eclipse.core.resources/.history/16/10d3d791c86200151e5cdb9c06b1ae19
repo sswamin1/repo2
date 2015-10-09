@@ -1,0 +1,20 @@
+package web.designpattern.builder;
+
+public class Waiter {
+
+	PizzaBuilder pizzabuilder;
+
+	public PizzaBuilder getPizzabuilder() {
+		return pizzabuilder;
+	}
+
+	public void setPizzabuilder(PizzaBuilder pizzabuilder) {
+		this.pizzabuilder = pizzabuilder;
+	}
+	
+	public void constructPizza()
+	{
+		pizzabuilder.get
+	}
+	
+}

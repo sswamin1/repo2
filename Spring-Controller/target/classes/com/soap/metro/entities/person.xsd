@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.example.org/person" 
+xmlns:tns="http://www.example.org/person" elementFormDefault="qualified">
+
+<xsd:element name="PersonRequest" type="xsd:string"/>
+<!-- <xsd:element name="PersonResponse" type="xsd:"/> -->
+
+<xsd:element name="PersonResponse">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="personName" type="xsd:string" />
+				<xsd:element name="person" type="xsd:string" />
+				<xsd:element name="director" type="xsd:string" />
+				<xsd:element name="comments" type="xsd:string" />
+			</xsd:sequence>
+		</xsd:complexType>
+</xsd:element>
+
+
+</xsd:schema>

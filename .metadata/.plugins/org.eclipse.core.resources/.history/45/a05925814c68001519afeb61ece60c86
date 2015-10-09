@@ -1,0 +1,23 @@
+package web.designpattern.decorator;
+
+public class Mocha extends CondimentDecorator{
+
+	Beverage beverage;
+	
+	public Mocha(Beverage beverage) {	
+		this.beverage = beverage;
+	}
+
+	@Override
+	public String getDescription() {
+		
+		return beverage.getDescription(description)+" Mocha";
+	}
+
+	@Override
+	public double getCost() {
+		// TODO Auto-generated method stub
+		return beverage.getCost()+.20;
+	}
+
+}
